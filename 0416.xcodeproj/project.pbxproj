@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,12 @@
 		FF7DD4742447E677009CF81F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7DD4722447E677009CF81F /* Main.storyboard */; };
 		FF7DD4762447E677009CF81F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7DD4752447E677009CF81F /* Assets.xcassets */; };
 		FF7DD4792447E677009CF81F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7DD4772447E677009CF81F /* LaunchScreen.storyboard */; };
+		FF7DD4A324481A12009CF81F /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DD4A124481A12009CF81F /* TopViewController.swift */; };
+		FF7DD4A424481A12009CF81F /* TopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF7DD4A224481A12009CF81F /* TopViewController.xib */; };
+		FF7DD4A724481A50009CF81F /* TopMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DD4A524481A50009CF81F /* TopMainView.swift */; };
+		FF7DD4A824481A50009CF81F /* TopMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF7DD4A624481A50009CF81F /* TopMainView.xib */; };
+		FF7DD4AB24481B8F009CF81F /* TopMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DD4A924481B8F009CF81F /* TopMainCollectionViewCell.swift */; };
+		FF7DD4AC24481B8F009CF81F /* TopMainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF7DD4AA24481B8F009CF81F /* TopMainCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		FF7DD4752447E677009CF81F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF7DD4782447E677009CF81F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF7DD47A2447E677009CF81F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF7DD4A124481A12009CF81F /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		FF7DD4A224481A12009CF81F /* TopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopViewController.xib; sourceTree = "<group>"; };
+		FF7DD4A524481A50009CF81F /* TopMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMainView.swift; sourceTree = "<group>"; };
+		FF7DD4A624481A50009CF81F /* TopMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopMainView.xib; sourceTree = "<group>"; };
+		FF7DD4A924481B8F009CF81F /* TopMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMainCollectionViewCell.swift; sourceTree = "<group>"; };
+		FF7DD4AA24481B8F009CF81F /* TopMainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopMainCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +66,6 @@
 				343FB803DDB8A21209D03F2E /* Pods-0416.debug.xcconfig */,
 				3BFAE5A7CA10A1CF969588ED /* Pods-0416.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,6 +90,7 @@
 		FF7DD46B2447E676009CF81F /* 0416 */ = {
 			isa = PBXGroup;
 			children = (
+				FF7DD4A024481A05009CF81F /* Top */,
 				FF7DD46C2447E677009CF81F /* AppDelegate.swift */,
 				FF7DD46E2447E677009CF81F /* SceneDelegate.swift */,
 				FF7DD4722447E677009CF81F /* Main.storyboard */,
@@ -87,6 +99,19 @@
 				FF7DD47A2447E677009CF81F /* Info.plist */,
 			);
 			path = 0416;
+			sourceTree = "<group>";
+		};
+		FF7DD4A024481A05009CF81F /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				FF7DD4A124481A12009CF81F /* TopViewController.swift */,
+				FF7DD4A224481A12009CF81F /* TopViewController.xib */,
+				FF7DD4A524481A50009CF81F /* TopMainView.swift */,
+				FF7DD4A624481A50009CF81F /* TopMainView.xib */,
+				FF7DD4A924481B8F009CF81F /* TopMainCollectionViewCell.swift */,
+				FF7DD4AA24481B8F009CF81F /* TopMainCollectionViewCell.xib */,
+			);
+			path = Top;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +174,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF7DD4A824481A50009CF81F /* TopMainView.xib in Resources */,
+				FF7DD4A424481A12009CF81F /* TopViewController.xib in Resources */,
 				FF7DD4792447E677009CF81F /* LaunchScreen.storyboard in Resources */,
+				FF7DD4AC24481B8F009CF81F /* TopMainCollectionViewCell.xib in Resources */,
 				FF7DD4762447E677009CF81F /* Assets.xcassets in Resources */,
 				FF7DD4742447E677009CF81F /* Main.storyboard in Resources */,
 			);
@@ -204,8 +232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF7DD4AB24481B8F009CF81F /* TopMainCollectionViewCell.swift in Sources */,
+				FF7DD4A324481A12009CF81F /* TopViewController.swift in Sources */,
 				FF7DD46D2447E677009CF81F /* AppDelegate.swift in Sources */,
 				FF7DD46F2447E677009CF81F /* SceneDelegate.swift in Sources */,
+				FF7DD4A724481A50009CF81F /* TopMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
