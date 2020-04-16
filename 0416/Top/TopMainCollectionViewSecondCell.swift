@@ -15,6 +15,7 @@ extension TopMainCollectionViewSecondCellDelegate {
 // MARK: - Property
 class TopMainCollectionViewSecondCell: BaseCollectionViewCell {
     weak var delegate: TopMainCollectionViewSecondCellDelegate? = nil
+    @IBOutlet weak var labels: UILabel!
 }
 // MARK: - Life cycle
 extension TopMainCollectionViewSecondCell {

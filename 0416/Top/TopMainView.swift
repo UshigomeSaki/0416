@@ -18,6 +18,8 @@ class TopMainView: BaseView{
     weak var delegate: TopMainViewDelegate? = nil
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionViewFlowLayout: UICollectionViewFlowLayout!
+    var labels:[String]=["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"]
+    var labels2:[String]=["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"]
 }
 
 // MARK: - Life cycle
@@ -32,16 +34,20 @@ extension TopMainView {
 // MARK: - Protocol
 extension TopMainView :UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 18
+        return labels.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TopMainCollectionViewCell", for: indexPath)as? TopMainCollectionViewCell else {return UICollectionViewCell()}
         
+        cell.label.text=labels[indexPath.row]
+        
         guard let secondCell = collectionView.dequeueReusableCell(withReuseIdentifier: "TopMainCollectionViewSecondCell", for: indexPath)as? TopMainCollectionViewSecondCell else {return UICollectionViewCell()}
+        
+        secondCell.labels.text=labels2[indexPath.row]
          
         switch indexPath.row {
-        case 0,2,4,6,8,10,12,14,16:
+        case 0,2,4,6,8,10,12,14:
             return secondCell
         default:
             return cell
