@@ -15,6 +15,7 @@ extension TopMainCollectionViewCellDelegate {
 // MARK: - Property
 class TopMainCollectionViewCell: BaseCollectionViewCell {
     weak var delegate: TopMainCollectionViewCellDelegate? = nil
+    @IBOutlet weak var label: UILabel!
 }
 // MARK: - Life cycle
 extension TopMainCollectionViewCell {

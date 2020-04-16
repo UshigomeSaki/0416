@@ -19,6 +19,10 @@
 		FF7DD4A824481A50009CF81F /* TopMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF7DD4A624481A50009CF81F /* TopMainView.xib */; };
 		FF7DD4AB24481B8F009CF81F /* TopMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DD4A924481B8F009CF81F /* TopMainCollectionViewCell.swift */; };
 		FF7DD4AC24481B8F009CF81F /* TopMainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF7DD4AA24481B8F009CF81F /* TopMainCollectionViewCell.xib */; };
+		FF7DD4B124482278009CF81F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DD4AF24482278009CF81F /* SecondViewController.swift */; };
+		FF7DD4B224482278009CF81F /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF7DD4B024482278009CF81F /* SecondViewController.xib */; };
+		FF7DD4B5244828E7009CF81F /* TopMainCollectionViewSecondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7DD4B3244828E7009CF81F /* TopMainCollectionViewSecondCell.swift */; };
+		FF7DD4B6244828E7009CF81F /* TopMainCollectionViewSecondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF7DD4B4244828E7009CF81F /* TopMainCollectionViewSecondCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		FF7DD4A624481A50009CF81F /* TopMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopMainView.xib; sourceTree = "<group>"; };
 		FF7DD4A924481B8F009CF81F /* TopMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMainCollectionViewCell.swift; sourceTree = "<group>"; };
 		FF7DD4AA24481B8F009CF81F /* TopMainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopMainCollectionViewCell.xib; sourceTree = "<group>"; };
+		FF7DD4AF24482278009CF81F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FF7DD4B024482278009CF81F /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		FF7DD4B3244828E7009CF81F /* TopMainCollectionViewSecondCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMainCollectionViewSecondCell.swift; sourceTree = "<group>"; };
+		FF7DD4B4244828E7009CF81F /* TopMainCollectionViewSecondCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopMainCollectionViewSecondCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +98,7 @@
 		FF7DD46B2447E676009CF81F /* 0416 */ = {
 			isa = PBXGroup;
 			children = (
+				FF7DD4AE24482262009CF81F /* Second */,
 				FF7DD4A024481A05009CF81F /* Top */,
 				FF7DD46C2447E677009CF81F /* AppDelegate.swift */,
 				FF7DD46E2447E677009CF81F /* SceneDelegate.swift */,
@@ -110,8 +119,19 @@
 				FF7DD4A624481A50009CF81F /* TopMainView.xib */,
 				FF7DD4A924481B8F009CF81F /* TopMainCollectionViewCell.swift */,
 				FF7DD4AA24481B8F009CF81F /* TopMainCollectionViewCell.xib */,
+				FF7DD4B3244828E7009CF81F /* TopMainCollectionViewSecondCell.swift */,
+				FF7DD4B4244828E7009CF81F /* TopMainCollectionViewSecondCell.xib */,
 			);
 			path = Top;
+			sourceTree = "<group>";
+		};
+		FF7DD4AE24482262009CF81F /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				FF7DD4AF24482278009CF81F /* SecondViewController.swift */,
+				FF7DD4B024482278009CF81F /* SecondViewController.xib */,
+			);
+			path = Second;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,11 +195,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF7DD4A824481A50009CF81F /* TopMainView.xib in Resources */,
+				FF7DD4B224482278009CF81F /* SecondViewController.xib in Resources */,
 				FF7DD4A424481A12009CF81F /* TopViewController.xib in Resources */,
 				FF7DD4792447E677009CF81F /* LaunchScreen.storyboard in Resources */,
 				FF7DD4AC24481B8F009CF81F /* TopMainCollectionViewCell.xib in Resources */,
 				FF7DD4762447E677009CF81F /* Assets.xcassets in Resources */,
 				FF7DD4742447E677009CF81F /* Main.storyboard in Resources */,
+				FF7DD4B6244828E7009CF81F /* TopMainCollectionViewSecondCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,11 +254,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF7DD4B124482278009CF81F /* SecondViewController.swift in Sources */,
 				FF7DD4AB24481B8F009CF81F /* TopMainCollectionViewCell.swift in Sources */,
 				FF7DD4A324481A12009CF81F /* TopViewController.swift in Sources */,
 				FF7DD46D2447E677009CF81F /* AppDelegate.swift in Sources */,
 				FF7DD46F2447E677009CF81F /* SceneDelegate.swift in Sources */,
 				FF7DD4A724481A50009CF81F /* TopMainView.swift in Sources */,
+				FF7DD4B5244828E7009CF81F /* TopMainCollectionViewSecondCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
