@@ -16,6 +16,7 @@ class TopViewController: BaseViewController {
 extension TopViewController {
     override func loadView() {
         super.loadView()
+        setDelegate()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +26,18 @@ extension TopViewController {
     }
 }
 // MARK: - Protocol
-extension TopViewController {
+extension TopViewController:TopMainViewDelegate{
+    func didSelectItemAt() {
+        let secondViewController = SecondViewController()
+        navigationController?.pushViewController(secondViewController, animated: true)
+        animatorManager.navigationType = .slide_push
+    }
+    
 }
 // MARK: - method
 extension TopViewController {
+    func setDelegate(){
+        mainView.delegate = self
+    }
 }
 

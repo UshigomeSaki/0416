@@ -18,7 +18,19 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J8A-qs-wIA">
                         <rect key="frame" x="0.0" y="0.0" width="157" height="148"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKW-jn-t9s">
+                                <rect key="frame" x="48" y="38" width="61.5" height="72"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.86463886440000004" green="0.96760103959999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WKW-jn-t9s" firstAttribute="centerY" secondItem="J8A-qs-wIA" secondAttribute="centerY" id="HlC-2S-gqJ"/>
+                            <constraint firstItem="WKW-jn-t9s" firstAttribute="centerX" secondItem="J8A-qs-wIA" secondAttribute="centerX" id="Ucy-mq-EjL"/>
+                        </constraints>
                     </view>
                 </subviews>
                 <constraints>
