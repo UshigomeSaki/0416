@@ -41,6 +41,9 @@
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="167" height="176"/>
+            <connections>
+                <outlet property="labels" destination="PIj-m5-Qx0" id="e5x-p8-Mov"/>
+            </connections>
             <point key="canvasLocation" x="93.478260869565219" y="93.080357142857139"/>
         </collectionViewCell>
     </objects>
